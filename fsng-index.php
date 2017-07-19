@@ -27,8 +27,8 @@ define('WF_PATH', WP_PLUGIN_URL . '/' . plugin_basename( dirname(__FILE__) ) . '
 if(get_option('show_flexslider')==1){
 add_action( 'wp_enqueue_scripts', 'flexslider_scripts' );
 add_action('wp_head', 'fsng_addScript');
-add_filter( "requirement", "fsng_replaceGallery" );
-echo apply_filters( 'requirement', 'fsng_replaceGallery' ); 
+add_filter( 'the_content', 'fsng_replaceGallery' );
+add_filter( 'requirement', 'fsng_replaceGallery' );
 }
 
 //add include files using Wordpress enqueue functions
