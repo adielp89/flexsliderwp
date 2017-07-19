@@ -93,8 +93,10 @@ $author              = get_theme_mod( 'newsmag_enable_author_box', true );
 						  <div role="tabpanel" class="tab-pane fade" id="fotos">							
 						  <?php 
 						  
-						  $gallery_wp=types_render_field( "galeria-de-fotos", array( ));						  
-						  var_dump($gallery_wp);
+						  $gallery_wp = types_render_field( "galeria-de-fotos", array( ));						  
+						  echo '<pre>';
+							  var_dump($gallery_wp);
+						  echo '</pre>';
 						  echo apply_filters('requirement', $gallery_wp);
 						  						 
 						  ?>
