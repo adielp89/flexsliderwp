@@ -72,16 +72,7 @@ $author              = get_theme_mod( 'newsmag_enable_author_box', true );
 									</h3>
 										<p><span>
 										<?php 
-										/*
-										$content_alojamiento = explode('[]',get_the_content());
-										  //var_dump ($content_alojamiento);
-										  //print_r $gallery_wp;
-										  echo $content_alojamiento[0];
-										
-										*/
-										
 										the_content(); 
-										
 										?>
 										</span></p>
 								</div>
