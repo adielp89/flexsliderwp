@@ -94,6 +94,7 @@ $author              = get_theme_mod( 'newsmag_enable_author_box', true );
 						  <?php 
 						  
 						  $gallery_wp=types_render_field( "galeria-de-fotos", array( ));						  
+						  var_dump($gallery_wp);
 						  echo apply_filters('requirement', $gallery_wp);
 						  						 
 						  ?>
