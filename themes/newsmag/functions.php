@@ -279,7 +279,7 @@ return $output;
 }
 */
 
-
+remove_shortcode('gallery', 'gallery_shortcode'); 
 
 
 
