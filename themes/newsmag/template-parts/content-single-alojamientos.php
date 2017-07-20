@@ -92,7 +92,7 @@ $author              = get_theme_mod( 'newsmag_enable_author_box', true );
 						  
 						  <div role="tabpanel" class="tab-pane fade" id="fotos">							
 						  <?php 
-						  
+						  /*
 						  echo types_render_field( "galeria-de-fotos", array('output' => 'raw' ));
 						  
 						  $gallery_wp =types_render_field( "galeria-de-fotos", array('output' => 'raw' ));						  
@@ -100,7 +100,13 @@ $author              = get_theme_mod( 'newsmag_enable_author_box', true );
 							  var_dump($gallery_wp);
 						  echo '</pre>';
 						  echo apply_filters('requirement', $gallery_wp);
-						  						 
+						  */
+
+							$images = get_field('galeria_de_fotos_alojamiento');
+							foreach( $images as $image ){
+								echo $image['url'];
+							}
+
 						  ?>
 						  </div>
 						  <div role="tabpanel" class="tab-pane fade" id="habitaciones">
