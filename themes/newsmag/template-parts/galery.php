@@ -3,7 +3,7 @@ $gallery_wp = get_field('galeria_de_fotos_alojamiento');
 //var_dump ($gallery_wp);
 if( $gallery_wp ): ?>
     <div id="slider" class="flexslider">
-        <ul class="slides flex-direction-nav">
+        <ul class="slides">
             <?php foreach( $gallery_wp as $image ): ?>
                 <li>
                     <img src="<?php echo $image['sizes']['newsmag-slider-flexslider']; ?>" alt="<?php echo $image['alt']; ?>" />

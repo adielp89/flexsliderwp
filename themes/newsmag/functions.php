@@ -259,7 +259,7 @@ add_action('wp_head', 'fsng_addScriptt');
 
 function my_add_styles() {
     wp_enqueue_style('Flexslider-css', get_stylesheet_directory_uri().'/assets/vendors/flexslider-plugin/flexslider.css');
-	//wp_enqueue_style('FlexsliderNav-css', get_stylesheet_directory_uri().'/assets/vendors/flexslider/flexslider-direction-nav.css');
+	wp_enqueue_style('FlexsliderNav-css', get_stylesheet_directory_uri().'/assets/vendors/flexslider/flexslider-direction-nav.css');
 }
 
 // JS

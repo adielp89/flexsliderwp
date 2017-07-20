@@ -90,7 +90,7 @@ $author              = get_theme_mod( 'newsmag_enable_author_box', true );
 							</div>
 						  </div>
 						  
-						  <div role="tabpanel" class="tab-pane fade" id="fotos">							
+						  <div role="tabpanel" class="tab-pane fade lead-media" id="fotos">							
 						  <?php 
 						  /*
 						  echo types_render_field( "galeria-de-fotos", array('output' => 'raw' ));
