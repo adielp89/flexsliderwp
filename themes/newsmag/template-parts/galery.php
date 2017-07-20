@@ -6,7 +6,7 @@ if( $gallery_wp ): ?>
         <ul class="slides flex-direction-nav">
             <?php foreach( $gallery_wp as $image ): ?>
                 <li>
-                    <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <img src="<?php echo $image['sizes']['newsmag-slider-flexslider']; ?>" alt="<?php echo $image['alt']; ?>" />
                    <!-- <p class="flex-caption"><?php // echo $image['caption']; ?></p> -->
                 </li>
             <?php endforeach; ?>
@@ -16,7 +16,7 @@ if( $gallery_wp ): ?>
         <ul class="slides">
             <?php foreach( $gallery_wp as $image ): ?>
                 <li>
-                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <img src="<?php echo $image['sizes']['newsmag-carousel-flexslider']; ?>" alt="<?php echo $image['alt']; ?>" />
                 </li>
             <?php endforeach; ?>
         </ul>
