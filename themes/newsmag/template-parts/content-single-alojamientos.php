@@ -95,18 +95,19 @@ $author              = get_theme_mod( 'newsmag_enable_author_box', true );
 						  /*
 						  echo types_render_field( "galeria-de-fotos", array('output' => 'raw' ));
 						  
-						  $gallery_wp =types_render_field( "galeria-de-fotos", array('output' => 'raw' ));						  
+						  $gallery_wp =get_field('galeria_de_fotos_alojamiento');						  
 						  echo '<pre>';
 							  var_dump($gallery_wp);
 						  echo '</pre>';
 						  echo apply_filters('requirement', $gallery_wp);
-						  */
-
+						  
+							/*
 							$images = get_field('galeria_de_fotos_alojamiento');
 							foreach( $images as $image ){
 								echo $image['url'];
 							}
-
+							*/
+							get_template_part( 'template-parts/galery' );
 						  ?>
 						  </div>
 						  <div role="tabpanel" class="tab-pane fade" id="habitaciones">
