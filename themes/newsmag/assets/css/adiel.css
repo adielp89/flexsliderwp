@@ -1811,3 +1811,22 @@ ul#menu-footermenu1, ul#menu-footermenu2, ul#menu-footermenu3, ul#menu-footermen
     border-radius: 10px 10px 0px 0px;
     border-bottom: 3px solid #172639;
 }
+
+/* GALERIA DE FOTOS DE LOS ALOJAMIENTOS Y OPCIONALES */
+
+.lead-media {
+    background: #eee;
+}
+
+.single-listings #slider {
+    min-height: 460px;
+    background: url(../images/loader.gif) no-repeat center center;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #d5d9dd;
+}
+
+.flex-direction-nav {
+    margin: 0 !important;
+    padding: 0 !important;
+}

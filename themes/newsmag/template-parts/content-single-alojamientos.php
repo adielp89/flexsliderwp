@@ -389,7 +389,7 @@ $author              = get_theme_mod( 'newsmag_enable_author_box', true );
 								</ul>
 							</div>
 						  </div>
-						  <div role="tabpanel" class="tab-pane fade" id="booking"><?php $book=types_render_field( "calendario-de-booking", array( )); echo do_shortcode($book);?></div>
+						  <div role="tabpanel" class="tab-pane fade" id="booking"><?php $book=types_render_field( "calendario-de-booking", array()); echo do_shortcode($book);?></div>
 					  </div>
 					</div>	
 					<?php

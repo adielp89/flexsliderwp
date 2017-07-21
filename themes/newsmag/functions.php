@@ -253,22 +253,58 @@ if(function_exists('register_sidebar')) {
 /* Flexslider para Galerías */
 
 // CSS
+
 add_action('wp_enqueue_scripts', 'my_add_styles');
 add_action('wp_enqueue_scripts', 'my_add_scripts');
 add_action('wp_head', 'fsng_addScriptt');
 
 function my_add_styles() {
     wp_enqueue_style('Flexslider-css', get_stylesheet_directory_uri().'/assets/vendors/flexslider-plugin/flexslider.css');
-	wp_enqueue_style('FlexsliderNav-css', get_stylesheet_directory_uri().'/assets/vendors/flexslider/flexslider-direction-nav.css');
+	wp_enqueue_style('FlexsliderNav-css', get_stylesheet_directory_uri().'/assets/vendors/flexslider-plugin/flexslider-direction-nav.css');
 }
 
 // JS
+
 function my_add_scripts() {
-    //wp_enqueue_script('jquery');
+    wp_enqueue_script('jquery');
     wp_enqueue_script('flexslider', get_stylesheet_directory_uri().'/assets/vendors/flexslider-plugin/jquery.flexslider-min.js', array('jquery'));
     //wp_enqueue_script('flexslider-init', get_stylesheet_directory_uri().'/assets/vendors/flexslider/flexslider-init.js', array('jquery', 'flexslider'));
 }
 
+function fsng_addScriptt(){
+echo '<script type="text/javascript" charset="utf-8">
+  jQuery(window).load(function() {
+    jQuery(\'#carousel\').flexslider({
+    animation: "slide",
+	controlNav: false,
+	animateHeight: true,
+	directionNav: true,
+	animationLoop: false,
+	slideshow: true,
+	slideshowSpeed: 7000,
+	animationDuration: 600,
+	itemWidth: 120,
+	itemMargin: 0,
+	asNavFor: \'#slider\'
+  });
+ 
+  jQuery(\'#slider\').flexslider({
+    animation: "slide",				
+	controlNav: false,
+	animationLoop: false,
+	slideshow: false,
+	sync: "#carousel"
+    });
+  });
+  
+  
+</script>';
+}	
+
+
+
+
+/*
 function fsng_addScriptt(){
 echo '<script type="text/javascript" charset="utf-8">
   jQuery(window).load(function() {
@@ -294,8 +330,6 @@ echo '<script type="text/javascript" charset="utf-8">
 }	
 
 
-
-/*
 remove_shortcode('gallery', 'gallery_shortcode'); // removes the original shortcode
 add_shortcode('gallery', 'my_awesome_gallery_shortcode'); // add your own shortcode
 
